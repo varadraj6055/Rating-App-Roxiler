@@ -1,81 +1,72 @@
-
-
-
 # MERN Stack Store Rating App
-The MERN Stack Store Rating App allows users to sign up, log in, view stores, and submit ratings. Admin users can manage stores and users. The app is built using the MERN stack (MongoDB, Express.js, React.js, Node.js), with authentication managed via JWT tokens 
-# MERN Stack Store Rating App deployed At:
-[store-rating-app](https://polite-bunny-6c78c3.netlify.app/)
+This is the assignment submitted by Varadraj Kharosear to Roxiler  it is an full-stack web app for rating stores, built using the MERN stack (MongoDB, Express.js, React.js, Node.js). Users can register, log in, view stores, and submit ratings. Admin users can manage stores and users.
 
+## Technologies
+MongoDB: NoSQL database
 
+Express.js: Backend API framework
 
-## Technologies Used
+React.js: Frontend UI
 
-- **MongoDB**: NoSQL database used for storing user registration data.
-- **Express.js**: Node.js framework used for building the backend RESTful API.
-- **React**: JavaScript library used for building the frontend user interface.
-- **Node.js**: JavaScript runtime used for server-side development.
-- **Mongoose**: MongoDB object modeling tool used for interacting with the MongoDB database.
-- **Axios**: Promise-based HTTP client used for making AJAX requests from React to the backend API.
+Node.js: Server-side runtime
+
+Mongoose: MongoDB object modeling
+
+Axios: HTTP client for API requests
 
 ## Features
+User Registration & Authentication: Sign up, login, and submit ratings.
 
-- **User Registration**: Normal users can sign up, log in, and view stores and Admin users can add other users and stores.
-- **User Authentication**: Secure user authentication using Passport.js or JSON Web Tokens (JWT).
-- **Operations**: Normal users can view store listings and submit ratings and Admin users can add, update, and delete stores.
-- **Flash Messages**: Displaying flash messages to provide feedback to users after successful or failed operations.
-- **Form Validation**: Client-side and server-side form validation to ensure data integrity and security.
-- **Responsive Design**: Responsive user interface that works seamlessly across various devices and screen sizes.
-- **Admin Dashboard**:Admin users can view total users, total stores, and total ratings submitted
+Store Management: Admins can add, update, and delete stores.
 
-## Setup Instructions
+Ratings: Submit 1-5 ratings for stores.
 
-1. **Clone the Repository**:
-   ```bash
-   https://github.com/HarshLambe/store_rate_app.git
-   ```
+Admin Dashboard: View statistics on users, stores, and ratings.
 
-2. **Install Dependencies**:
-   - Install backend dependencies:
-     ```bash
-     cd backend
-     npm install
-     ```
-   - Install frontend dependencies:
-     ```bash
-     cd frontend
-     npm install
-     ```
+Form Validation: Ensures accurate data (email, name, address, password).
 
-3. ## Set Environment Variables**:
-   - Create a `.env` file in the root directory:
-     ```
-     MONGODB_CONNECTION_URI=mongodb://localhost:27017/your_db # Change this to your MongoDB URI
-     JWT_SECRET=your_jwt_secret_key
-     ```
+Responsive Design: Works across devices.
 
-4. ## Start the Development Server:
-   - Run the backend:
-     ```bash
-     npm start
-     ```
-   - Run the frontend:
-     ```bash
-     npm run dev
-     ```
-   - The app will be accessible at `http://localhost:5173/`.
-5. ## Prerequisites:
-    - Node.js installed (v14 or later recommended).
-    - MongoDB installed locally or a MongoDB Atlas account.
-    - npm installed.
-6. ## Validations:
-    - The name length should be 60 characters max and 20 characters min.
-   - The Address length should be 400 characters max.
-    - The password length max 16 and 8 min, it should have at least 1  upper, and 1 special character in it.
-    - Email address validation should be there in the email field.
-   
+## Setup
+Clone the Repo:
+git clone https://github.com/varadraj6055/Rating-App-Roxiler.git
+Install Dependencies:
+Backend:
+cd backend
+npm install
+Frontend:
+cd frontend
+npm install
+Set Environment Variables:
+Create .env file:
+ini
+
+MONGODB_CONNECTION_URI=mongodb://localhost:27017/your_db
+JWT_SECRET=your_jwt_secret_key
+Start the Servers:
+
+Backend:
+npm start
+Frontend:
+
+npm run dev
+Prerequisites:
+
+Node.js (v14+)
+
+MongoDB (local or Atlas)
+
+npm
+
+## Validations:
+
+Name: 20-60 characters
+
+Address: Max 400 characters
+
+Password: 8-16 characters, 1 uppercase, 1 special character
+
+Email: Standard format
+
 ## Contributing
-
-Contributions are welcome! Please feel free to fork the repository, make changes, and submit a pull request.
-
-
-
+Fork the repo, make changes, and submit a pull request.
